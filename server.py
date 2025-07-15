@@ -22,4 +22,5 @@ def predict_home_price():
     return response
 if __name__=="__main__":
     util.load_saved_artifacts()
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+
